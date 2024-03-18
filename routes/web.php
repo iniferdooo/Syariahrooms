@@ -18,6 +18,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::controller(AuthController::class)->group(function(){
-    Route ::get("/register", 'register')->name('register');  //registration form post request
+Route::get('/register', function () {
+    return view('auth.register');
 });
+Route::get('/test', function () {
+    return view('auth.test');
+});
+
+Route::get('/login', function () {
+    return view('auth.login');
+});
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+
+
+
+
