@@ -17,7 +17,7 @@
           <div class="w-full sm:w-1/2 pl-7 pr-7">
             <h2 class="font-bold text-black text-2xl font-sans">Welcome Back</h2>
               <p class="text-[#63B3A8] mt-1 font-sans">Login your account</p>
-              <form class="flex flex-col gap-2"action="">
+              <form class="flex flex-col gap-2"action="login" method="POST">
                 <div class="flex flex-col sm:flex-row w-[330px] bg-[#DCDCDC] mt-3 rounded-lg gap-2">
                   <input class="bg-[#DCDCDC] p-2 ml-7 border-l-2 border-l-[#DCDCDC] rounded-lg text-black font-sans sm:w-[304px]" type="email" name="email" id="email" placeholder="Email" required>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope absolute translate-x-2 translate-y-3 " viewBox="0 0 16 16">
