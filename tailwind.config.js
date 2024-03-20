@@ -7,6 +7,8 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'montserrat' : ['Montserrat'],
     },
   },
   plugins: [require("daisyui")],
@@ -22,5 +24,6 @@ export default {
     themeRoot: ":root", // The element that receives theme color CSS variables
   },
 
+  }
 }
 

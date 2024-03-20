@@ -8,35 +8,45 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Login</title>
 </head>
-<body>
-    <section class="bg-[url('../../assets/bg2.jpg')] bg-cover min-h-screen flex items-center justify-center">
-        <div class="backdrop-blur-2xl flex rounded-2xl shadow-lg max-w-3xl p-5">
-          <div class="w-1/2 sm:block hidden ">
+<body class="bg-gray-100 w-full">
+    <section class="min-h-screen flex flex-col items-center justify-center">
+        <div class="bg-gray-100 flex flex-col sm:flex-row rounded-2xl shadow-lg max-w-3xl p-5">
+          <div class="sm:w-1/2 sm:block hidden ">
             <img class="h-full rounded-2xl" src="../../assets/bed.jpg" alt="">
         </div>
-          <div class="w-1/2 pl-8">
-            <h2 class="font-bold text-black text-2xl font-serif">Welcome Back</h2>
-              <p class="text-[#117B34] mt-1 font-serif">Login your account</p>
+          <div class="w-full sm:w-1/2 pl-7 pr-7">
+            <h2 class="font-bold text-black text-2xl font-sans">Welcome Back</h2>
+              <p class="text-[#63B3A8] mt-1 font-sans">Login your account</p>
               <form class="flex flex-col gap-2"action="">
-                <input class="bg-[#696969] p-2 mt-3 rounded-lg text-black font-serif"type="email" name="email" id="Email" placeholder="email" required>
-                <input class="bg-[#696969] p-2 mt-3 rounded-lg text-black font-serif"type="password" name="password" id="password" placeholder="password" required>
-                <div id="checkPassword" class="font-blod text-[#B22222] mt-2 font-serif">Wrong pasword. Please try again.</div>
+                <div class="flex flex-col sm:flex-row w-[330px] bg-[#DCDCDC] mt-3 rounded-lg gap-2">
+                  <input class="bg-[#DCDCDC] p-2 ml-7 border-l-2 border-l-[#DCDCDC] rounded-lg text-black font-sans sm:w-[304px]" type="email" name="email" id="email" placeholder="Email" required>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope absolute translate-x-2 translate-y-3 " viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                  </svg>
+                </div>
+                <div class="flex flex-col sm:flex-row w-[330px] bg-[#DCDCDC] mt-2 rounded-lg gap-2">
+                  <input class="bg-[#DCDCDC] p-2 ml-6 border-l-2 border-l-[#DCDCDC] rounded-lg text-black font-sans sm:w-[304px]" type="text" name="address" id="address" placeholder="Your address">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house absolute translate-x-2 translate-y-3" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                  </svg>
+                </div>
+                <div id="checkPassword" class="font-blod text-[#B22222] mt-2 font-sans">Wrong pasword. Please try again.</div>
                 <div class="mt-3 flex justify-between items-center">
                     <div>
                         <input type="checkbox" name="remember me" id="rememberme">
-                        <label for="" class="font-serif">Remember me</label> 
+                        <label for="" class="font-sans">Remember me</label> 
                     </div>
                     <div>
-                        <a href="#" class="text-black font-serif">Forgot Password</a>
+                        <a href="#" class="text-black font-sans">Forgot Password</a>
                     </div>
                 </div>
                 
-                <button class="bg-[#63B3A8] text-white p-2 rounded-md font-serif">Login</button>
+                <button class="bg-[#63B3A8] text-white p-2 rounded-md font-sans">Login</button>
               </form>
-              <p class="mt-9 text-center">Don't have an account? <a class="text-black"href="register">Register</a></p>
-      
+              <p class="mt-9 text-center">Don't have an account? <a class="text-[#63B3A8]" href="register">Register</a></p>
           </div>
         </div>
         </section>
+        <svg class="absolute bottom-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#63B3A8" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,234.7C384,235,480,181,576,138.7C672,96,768,64,864,96C960,128,1056,224,1152,256C1248,288,1344,256,1392,240L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 </body>
 </html>
