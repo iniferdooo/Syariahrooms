@@ -10,7 +10,7 @@
 </head>
 <body class="bg-gray-100 w-full">
     <section class="min-h-screen flex flex-col items-center justify-center">
-        <div class="bg-gray-100 flex flex-col sm:flex-row rounded-2xl shadow-lg max-w-3xl p-5">
+        <div class="z-50 bg-gray-100 flex flex-col sm:flex-row rounded-2xl shadow-lg max-w-3xl p-5">
           <div class="sm:w-1/2 sm:block hidden ">
             <img class="h-full rounded-2xl" src="../../assets/bed.jpg" alt="">
         </div>
