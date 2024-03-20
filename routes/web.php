@@ -34,7 +34,7 @@ Route::get('/dashboard', function () {
 
 
 //Login
-Route::middleware('auth')->group(function(){
+
 Route::get('login', function () {
     return view('auth.login');
 });
@@ -43,4 +43,3 @@ Route::post('/loginproses', [loginController::class, 'loginproses'])->name('logi
 //Register
 Route::get('/register', [registerController::class, 'register'])->name('register');
 Route::post('/registeruser', [registerController::class, 'registeruser'])->name('registeruser');
-});
