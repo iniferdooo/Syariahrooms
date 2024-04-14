@@ -59,6 +59,19 @@
       </div>
     </div>
   </nav>
+  <button data-popover-target="popover-click" data-popover-trigger="click" type="button" class=" bottom-0 bg-fixed text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 py-2.5 text-center dark:bg-[#63B3A8] dark:hover:bg-teal-700 dark:focus:ring-teal-800 fixed right-0 ml-16" >jika ada yang ditanyakan klik disini</button>
+
+<div data-popover id="popover-click" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-neutral-200">
+    <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-[#63B3A8]">
+        <h3 class="font-semibold text-gray-900 dark:text-neutral-200">Hallo kak!</h3>
+    </div>
+    <div class="px-3 py-2">
+        <p>Apakah ada yang bisa saya bantu?</p>
+        <a class="text-gray-800" href="https://wa.me/+6282332888730"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fwhatsapp-logo&psig=AOvVaw2Yxim3BPZwdQ2Y0Jq-V-JQ&ust=1712058180499000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJiZ1-_3oIUDFQAAAAAdAAAAABAD" alt=""> whatsapp disini</a>
+        <p>jam operasional kami Dari Jam 09.00 - 16-00 WIB</p>
+    </div>
+    <div data-popper-arrow></div>
+</div>
 
 
 
@@ -75,13 +88,13 @@
               </div>
               <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                   <div>
-                      <a href="about.html" class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-900">About</a>
+                      <a href="/about" class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-900">About</a>
                   </div>
                   <div>
-                      <a href="Membership.html" class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-900">Membership</a>
+                      <a href="/membership" class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-900">Membership</a>
                   </div>
                   <div>
-                      <a href="kontak.html" class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-900">Contact</a>
+                      <a href="/zkontak" class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-900">Contact</a>
                   </div>
               </div>
           </div>

@@ -29,6 +29,9 @@ Route::get('/kontak', function () {
 Route::get('/fitur', function () {
     return view('fitur');
 });
+Route::get('/about', function () {
+    return view('about');
+});
 
 Route::controller(AuthController::class)->group(function(){
     Route ::get("/register", 'register')->name('register');  //registration form post request

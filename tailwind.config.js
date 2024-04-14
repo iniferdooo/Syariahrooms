@@ -4,11 +4,13 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require('flowbite/plugin')
+] ,
 
   daisyui: {
     themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
